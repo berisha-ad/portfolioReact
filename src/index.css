@@ -7,33 +7,36 @@
 }
 
 :root {
-    --primary-color: #071714;
-    --accent-color: #91aeff;
-    --text-color: #e3e3e3;
-    --black: #000;
-    --body-text-color: #bbb;
-    --border-color: #bbbbbb50;
+  --primary-color: #071714;
+  --accent-color: #41ffc9;
+  --secondary-color: #14211d;
+  --text-color: #e3e3e3;
+  --black: #000;
+  --body-text-color: #bbb;
+  --border-color: #bbbbbb50;
 }
 
 @font-face {
-    font-family: 'SourceCode';
-    src: url('/sourcecode.ttf') format('truetype');
-    font-weight: 100 900; 
-    font-stretch: 75% 125%; 
-    font-style: normal;
+  font-family: "SourceCode";
+  src: url("/sourcecode.ttf") format("truetype");
+  font-weight: 100 900;
+  font-stretch: 75% 125%;
+  font-style: normal;
 }
 
 .logo {
-  font-family: 'SourceCode';
+  font-family: "SourceCode";
   color: var(--accent-color);
 }
 
 body {
-    background-color: #100f17;
-    color: var(--text-color);
-    background-image:  linear-gradient(#113f3760 0.5px, transparent 0.5px), linear-gradient(90deg, #113f3760 0.5px, transparent 0.5px);
-    background-size: 40px 40px;
-    background-position: -2px -2px;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  background-image: linear-gradient(#113f3760 0.5px, transparent 0.5px),
+    linear-gradient(90deg, #113f3760 0.5px, transparent 0.5px);
+  background-size: 40px 40px;
+  background-position: -2px -2px;
+  font-weight: 100;
 }
 
 .left {
@@ -42,7 +45,7 @@ body {
   left: 0;
   height: 100vh;
   width: 30%;
-  background: linear-gradient(to right, #100f17, transparent);
+  background: linear-gradient(to right, #071714, transparent);
   pointer-events: none;
   z-index: 5;
 }
@@ -53,16 +56,64 @@ body {
   top: 0;
   height: 100vh;
   width: 30%;
-  background: linear-gradient(to left, #100f17, transparent);
+  background: linear-gradient(to left, #071714, transparent);
   pointer-events: none;
   z-index: 5;
 }
 
 .active {
-  background-color: #242234;
+  background-color: var(--secondary-color);
   color: var(--accent-color);
 }
 
 .emphasized {
   color: var(--accent-color);
+}
+
+.profile-img {
+  border-radius: 99rem;
+  background-color: var(--primary-color);
+  width: 230px;
+}
+
+.border {
+  border: 0.01rem solid #ffffff30;
+}
+
+.bg-secondary {
+  background-color: var(--secondary-color);
+}
+
+.headline-caps {
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+
+.btn {
+  position: relative;
+  padding: 1rem 1.3rem;
+  color: var(--text-color);
+  text-decoration: none;
+  background-color: var(--primary-color);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  border: 0.1rem solid var(--accent-color);
+  transition: background-color 300ms ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--accent-color);
+  color: #000;
+}
+
+.skill {
+  border-radius: 0.3rem;
+  padding: 0.1rem 0.2rem;
+  border: 0.05rem solid #41ffc9;
+  color: #41ffc9;
+  font-size: 0.7rem;
 }

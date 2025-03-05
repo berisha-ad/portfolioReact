@@ -1,7 +1,15 @@
+import HeroSection from "../components/projects/HeroSection";
+import Divider from "../components/projects/Divider";
+import ProjectsSection from "../components/projects/ProjectsSection";
+
 const Projects = () => {
-    return ( 
-        <h1>Projects</h1>
-     );
-}
- 
+  return (
+    <>
+      <HeroSection />
+      <Divider />
+      <ProjectsSection />
+    </>
+  );
+};
+
 export default Projects;
