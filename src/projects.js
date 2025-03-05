@@ -18,6 +18,7 @@ import webflow from "./icons/webflow.svg";
 import elega from "./images/elega.jpg";
 import quranapp from "./images/quranapp.png";
 import portfolio from "./images/portfolio.jpg";
+import portfolioReact from "./images/portfolioReact.jpg";
 import zukunftsraum from "./images/zukunftsraum.jpg";
 import sh2 from "./images/sh2.jpg";
 import coffeeshop from "./images/coffeeshop.jpg";
@@ -57,6 +58,16 @@ const projects = [
   },
   {
     id: 4,
+    title: "React Portfolio",
+    description:
+      "This portfolio website was built using React and Vite, reflecting a refined approach to modern frontend development. After gaining confidence in React, the project was developed to take full advantage of its component-based architecture, ensuring a modular, scalable, and maintainable code structure. The website features a dynamic project showcase, interactive UI elements, and smooth navigation, all optimized for performance and user experience. To enhance styling efficiency and maintainability, Tailwind CSS was integrated, allowing for a clean and responsive design without excessive custom CSS. The utility-first approach of Tailwind ensures a streamlined development process while maintaining flexibility in styling. Best practices in state management, reusable components, and performance optimization were followed, demonstrating a strong understanding of React’s ecosystem. This portfolio not only highlights the ability to build modern, high-performance web applications but also serves as a testament to the journey of mastering React, Vite, and Tailwind CSS in real-world projects.",
+    year: "2025",
+    link: "https://github.com/berisha-ad/portfolioReact",
+    image: portfolioReact,
+    skills: [react, tailwind],
+  },
+  {
+    id: 5,
     title: "Zukunftsraum",
     description:
       "I’m currently working on a real estate listing app built with Python using the Django framework. This project focuses on providing users with an efficient platform to browse, manage, and interact with property listings. Key features include user authentication, allowing users to register, log in, and manage their profiles securely. The app supports full CRUD (Create, Read, Update, Delete) functionality, enabling users to create new property listings, view existing ones, edit details, and remove listings when necessary. The back-end is powered by a PostgreSQL database, which ensures reliable data storage and retrieval for property listings, user accounts, and other app-related information. The app is designed with scalability and performance in mind, following best practices for security, user experience, and responsive design. As the project continues to develop, additional features such as advanced search filters, property image uploads, and user messaging are being integrated. This project showcases skills in Django web development, working with PostgreSQL databases, and building data-driven applications.",
@@ -66,7 +77,7 @@ const projects = [
     skills: [python, django, html, css, javascript],
   },
   {
-    id: 5,
+    id: 6,
     title: "SH2 Gmbh",
     description:
       "I developed a custom WordPress CMS theme for the website of SH2 GmbH, creating a unique and personalized online presence for the company. The theme was designed to align with SH2 GmbH’s branding and business needs, ensuring a visually appealing, user-friendly experience. I focused on optimizing both the frontend design and backend functionality, making sure that the theme was not only aesthetically pleasing but also fully responsive and easy to navigate on all devices. Custom features were integrated to allow for easy content management by the SH2 GmbH team, enabling them to update and maintain the website effortlessly. The custom theme was built with performance, security, and SEO best practices in mind, ensuring that the website loads quickly and ranks well in search engines. This project highlights my ability to design and develop tailored WordPress solutions, providing businesses with fully functional, scalable websites that meet their specific needs.",
@@ -76,7 +87,7 @@ const projects = [
     skills: [php, html, css, javascript],
   },
   {
-    id: 6,
+    id: 7,
     title: "Coffeeshop",
     description:
       "A static website was developed as the first major project during my academic studies, serving as a foundational milestone in learning web development. The website was built using essential front-end technologies, including HTML, CSS, and JavaScript, providing a hands-on experience in creating visually engaging, responsive, and functional web pages. The project aimed to showcase a strong understanding of web design principles, layout techniques, and content structure. It also emphasized the importance of clean, well-organized code and basic interactivity, ensuring that users could navigate through the site effortlessly. This static website served as a personal portfolio, allowing me to demonstrate my ability to integrate text, images, and other media to create an effective and aesthetically pleasing user experience. It marked the beginning of my journey in web development, providing a solid foundation for more complex, dynamic projects in the future.",
@@ -86,7 +97,7 @@ const projects = [
     skills: [html, css, javascript],
   },
   {
-    id: 7,
+    id: 8,
     title: "Terrassencafe",
     description:
       "I built a website for the Terrassencafe im Hundertwasserhaus using Webflow, focusing on capturing the unique and iconic style of the cafe while ensuring a seamless user experience. The design was inspired by the distinctive architectural features of the Hundertwasserhaus, incorporating vibrant colors, organic shapes, and a playful aesthetic that mirrors the building’s unconventional design. I used Webflow’s powerful design tools to create a visually appealing, responsive website that works flawlessly across all devices. Key features of the website include an interactive menu, a gallery showcasing the cafe’s atmosphere, and an easy-to-use contact form for reservations. Throughout the project, I paid close attention to both the aesthetics and functionality, ensuring that users could navigate the site effortlessly while reflecting the cafe’s creative, welcoming vibe. The website is optimized for performance, with fast loading times and smooth transitions, providing visitors with a pleasant and engaging online experience.",
@@ -96,7 +107,7 @@ const projects = [
     skills: [webflow, figma, photoshop, illustrator],
   },
   {
-    id: 8,
+    id: 9,
     title: "Hautzentrum",
     description:
       "I developed a website for a dermatologist using Webflow, with a strong emphasis on user experience (UX) design, corporate branding, and seamless Webflow development. The website was carefully crafted to create a professional and welcoming online presence for the dermatologist, ensuring it was easy for patients to find information about services, treatments, and booking appointments. The design prioritizes clean, modern aesthetics that align with the medical profession, while also incorporating the clinic’s branding, such as colors and logos, to ensure consistency with their offline presence. UX design principles were a key focus, with user-friendly navigation and intuitive layout to help visitors quickly access relevant content. I integrated Webflow’s responsive design features to ensure the website provides a smooth experience across all devices, from desktop to mobile. The Webflow development process involved building dynamic pages, forms for appointment scheduling, and interactive elements, all while maintaining high performance and quick load times. The project not only highlights my skills in Webflow development but also demonstrates my ability to create functional, branded websites that are both visually appealing and easy for users to navigate.",
