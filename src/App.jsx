@@ -1,11 +1,10 @@
-import './App.css'
+import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from './pages/Home';
-import About from './pages/About';
-import Projects from './pages/Projects';
-import Imprint from './pages/Imprint';
-import Layout from './pages/Layout';
-
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Projects from "./pages/Projects";
+import Imprint from "./pages/Imprint";
+import Layout from "./pages/Layout";
 
 const routes = createBrowserRouter([
   {
@@ -32,12 +31,11 @@ const routes = createBrowserRouter([
 ]);
 
 function App() {
-
   return (
     <>
-      <RouterProvider router={routes}/>
+      <RouterProvider router={routes} />
     </>
-  )
+  );
 }
 
 export default App;

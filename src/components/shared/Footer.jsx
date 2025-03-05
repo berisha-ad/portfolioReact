@@ -13,41 +13,41 @@ const Footer = () => {
           <Grid className="grid-cols-3 gap-6">
             <ul className="flex flex-col gap-2">
               <li>
-                <Link className="py-2" to="/">
+                <Link className="link" to="/">
                   Home
                 </Link>
               </li>
               <li>
-                <Link className="py-2" to="/">
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link className="py-2" to="/">
+                <Link className="link" to="/projects">
                   Projects
                 </Link>
               </li>
+              <li>
+                <Link className="link" to="/about">
+                  About
+                </Link>
+              </li>
             </ul>
             <ul className="flex flex-col gap-2">
               <li>
-                <Link className="py-2" to="/">
+                <a className="link" href="">
                   Github
-                </Link>
+                </a>
               </li>
               <li>
-                <Link className="py-2" to="/">
-                  LinkedIn
-                </Link>
+                <a className="link" href="">
+                  Github
+                </a>
               </li>
             </ul>
             <ul className="flex flex-col gap-2">
               <li>
-                <Link className="py-2" to="/">
+                <Link className="link" to="imprint">
                   Imprint
                 </Link>
               </li>
               <li>
-                <Link className="py-2" to="/">
+                <Link className="link" to="/">
                   Download CV
                 </Link>
               </li>

@@ -1,7 +1,7 @@
+import HeroSection from "../components/about/HeroSection";
+
 const About = () => {
-    return ( 
-        <h1>About</h1>
-     );
-}
- 
+  return <HeroSection />;
+};
+
 export default About;

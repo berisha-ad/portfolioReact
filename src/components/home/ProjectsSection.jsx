@@ -7,13 +7,15 @@ const ProjectsSection = () => {
   return (
     <Section>
       <Container>
-        <Card className="flex flex-col gap-6 p-8">
-          <h2 className="headline-caps text-xl">Projects</h2>
-          <p>
+        <Card className="p-8">
+          <h2 className="headline-caps text-xl mb-4">Projects</h2>
+          <p className="mb-4">
             During my studies and freelance work, successful projects have been
             completed.
           </p>
-          <Link to="/projects">To the projects</Link>
+          <Link className="link w-max" to="/projects">
+            To the projects
+          </Link>
         </Card>
       </Container>
     </Section>
