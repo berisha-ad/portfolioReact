@@ -1,28 +1,35 @@
+import { useState } from "react";
 import Section from "../shared/Section";
 import Container from "../shared/Container";
 import Grid from "../shared/Grid";
 import projects from "../../projects";
 import Card from "../shared/Card";
 import { Date } from "../home/CvSection";
-import { useState } from "react";
 
 const shortenText = (text) => {
   const words = text.split(" ");
   if (words.length > 20) {
-    let shortened = words.slice(0, 15).join(" ");
-    shortened = shortened + "...";
-    return shortened;
+    return words.slice(0, 15).join(" ") + "...";
   }
   return text;
 };
 
 const ProjectsSection = () => {
   const [selectedProject, setSelectedProject] = useState(null);
+  const [isClosing, setIsClosing] = useState(false);
+
+  const closeModal = () => {
+    setIsClosing(true);
+    setTimeout(() => {
+      setSelectedProject(null);
+      setIsClosing(false);
+    }, 600); // Timeout entspricht der Animation
+  };
 
   return (
     <Section className="py-16">
       <Container>
-        <Grid className="grid-cols-3 gap-6">
+        <Grid className="lg:grid-cols-3 gap-6">
           {projects.map((project) => (
             <Card
               onClick={(e) => {
@@ -49,20 +56,25 @@ const ProjectsSection = () => {
           ))}
         </Grid>
       </Container>
+
       {selectedProject && (
         <div
-          className="fixed z-50 inset-0 backdrop-brightness-25 flex items-center justify-center p-4"
-          onClick={() => setSelectedProject(null)}
+          className={`fixed z-50 inset-0 backdrop-animation ${
+            isClosing ? "hide" : ""
+          } flex items-center justify-center p-4`}
+          onClick={closeModal}
         >
           <div
-            className="bg-secondary p-6 rounded-lg shadow-lg max-w-2xl w-full max-h-[80vh] overflow-y-auto relative"
+            className={`bg-secondary border fade-box ${
+              isClosing ? "hide" : ""
+            } p-6 rounded-2xl shadow-lg max-w-2xl lg:max-h-[80vh] max-h-[60vh] overflow-y-auto relative`}
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex justify-between items-center pb-4">
               <h2 className="text-2xl">{selectedProject.title}</h2>
               <button
                 className="py-1 px-2 rounded-lg border cursor-pointer hover:bg-gray-800 transition-all"
-                onClick={() => setSelectedProject(null)}
+                onClick={closeModal}
               >
                 close
               </button>

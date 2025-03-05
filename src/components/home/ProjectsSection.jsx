@@ -7,7 +7,7 @@ const ProjectsSection = () => {
   return (
     <Section>
       <Container>
-        <Card className="p-8">
+        <Card className="lg:p-8 p-6">
           <h2 className="headline-caps text-xl mb-4">Projects</h2>
           <p className="mb-4">
             During my studies and freelance work, successful projects have been

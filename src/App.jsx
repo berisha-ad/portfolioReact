@@ -5,6 +5,7 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Imprint from "./pages/Imprint";
 import Layout from "./pages/Layout";
+import NotFound from "./pages/NotFound";
 
 const routes = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const routes = createBrowserRouter([
       {
         element: <Imprint />,
         path: "/imprint",
+      },
+      {
+        element: <NotFound />,
+        path: "*",
       },
     ],
   },

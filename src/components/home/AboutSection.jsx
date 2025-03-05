@@ -7,7 +7,7 @@ const AboutSection = () => {
   return (
     <Section className="py-16">
       <Container>
-        <Card className="p-8">
+        <Card className="lg:p-8 p-6">
           <h2 className="headline-caps text-xl mb-6">About</h2>
           <p className="mb-4">
             Hi, I’m Adrian, a passionate Full Stack Developer focused on

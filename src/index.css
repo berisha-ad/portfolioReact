@@ -84,7 +84,6 @@ body {
 }
 
 .active {
-  background-color: var(--secondary-color);
   color: var(--accent-color);
 }
 
@@ -173,4 +172,66 @@ body {
 .link.active::after {
   transform: scale(1);
   transform-origin: left;
+}
+
+@media (max-width: 700px) {
+  .profile-img {
+    width: 100px;
+  }
+}
+
+.fade-box {
+  opacity: 0;
+  width: 100%;
+  animation: fade 200ms ease-in-out forwards;
+  transform-origin: left;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.backdrop-animation {
+  /* backdrop-filter: blur(0px); */
+  animation: backdrop 200ms ease-in-out forwards;
+}
+
+@keyframes backdrop {
+  0% {
+    backdrop-filter: blur(0px);
+  }
+  100% {
+    backdrop-filter: blur(10px);
+  }
+}
+
+.fade-box.hide {
+  animation: fade-out 200ms ease-in-out forwards;
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.backdrop-animation.hide {
+  animation: backdrop-out 200ms ease-in-out forwards;
+}
+
+@keyframes backdrop-out {
+  0% {
+    backdrop-filter: blur(10px);
+  }
+  100% {
+    backdrop-filter: blur(0px);
+  }
 }

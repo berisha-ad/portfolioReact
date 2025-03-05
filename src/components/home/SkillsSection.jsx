@@ -9,9 +9,12 @@ const SkillsSection = () => {
     <Section className="py-16">
       <Container>
         <h2 className="text-2xl headline-caps mb-6">Skills</h2>
-        <Grid className="grid-cols-4 gap-4">
+        <Grid className="lg:grid-cols-4 grid-cols-2 gap-4">
           {skills.map((skill) => (
-            <Card className="p-4 flex rounded-sm gap-4 flex-row" key={skill.id}>
+            <Card
+              className="p-4 flex rounded-sm gap-4 flex-row items-center"
+              key={skill.id}
+            >
               <img src={skill.icon} width="30px" alt={skill.skill} />
               <p>{skill.skill}</p>
             </Card>
