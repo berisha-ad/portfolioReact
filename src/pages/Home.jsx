@@ -4,10 +4,12 @@ import { CvSection } from "../components/home/CvSection";
 import ProjectsSection from "../components/home/ProjectsSection";
 import SkillsSection from "../components/home/SkillsSection";
 import LoadingScreen from "../components/home/LoadingScreen";
+import ScrollToUp from "../components/shared/ScrollToUp";
 
 const Home = () => {
   return (
     <>
+      <ScrollToUp />
       <LoadingScreen />
       <HeroSection />
       <AboutSection />
