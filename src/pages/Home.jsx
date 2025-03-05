@@ -3,7 +3,6 @@ import AboutSection from "../components/home/AboutSection";
 import { CvSection } from "../components/home/CvSection";
 import ProjectsSection from "../components/home/ProjectsSection";
 import SkillsSection from "../components/home/SkillsSection";
-import Footer from "../components/home/Footer";
 
 const Home = () => {
   return (
@@ -13,7 +12,6 @@ const Home = () => {
       <CvSection />
       <ProjectsSection />
       <SkillsSection />
-      <Footer />
     </>
   );
 };

@@ -1,6 +1,9 @@
-const Card = ({ children, className }) => {
+const Card = ({ children, className, onClick }) => {
   return (
-    <div className={`rounded-2xl bg-secondary border ${className}`}>
+    <div
+      onClick={onClick}
+      className={`rounded-2xl bg-secondary border ${className}`}
+    >
       {children}
     </div>
   );

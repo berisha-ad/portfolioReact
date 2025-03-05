@@ -83,6 +83,9 @@ body {
 .bg-secondary {
   background-color: var(--secondary-color);
 }
+.skills-wrapper {
+  background-color: #113831;
+}
 
 .headline-caps {
   letter-spacing: 6px;
@@ -116,4 +119,13 @@ body {
   border: 0.05rem solid #41ffc9;
   color: #41ffc9;
   font-size: 0.7rem;
+}
+
+.project-card {
+  transition: background-color 150ms ease;
+}
+
+.project-card:hover {
+  background-color: var(--primary-color);
+  outline: 1px solid var(--accent-color);
 }

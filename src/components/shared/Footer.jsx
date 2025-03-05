@@ -1,12 +1,12 @@
-import Container from "../shared/Container";
+import Container from "./Container";
 import { Link } from "react-router-dom";
-import Grid from "../shared/Grid";
+import Grid from "./Grid";
 
 const Footer = () => {
   return (
     <footer className="pt-16 pb-40 bg-secondary">
       <Container>
-        <div className="realtive z-50 flex justify-between items-start">
+        <div className="relative z-30 flex justify-between items-start">
           <Link className="logo py-2" to="/">
             Adrian Berisha
           </Link>
