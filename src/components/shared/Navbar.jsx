@@ -4,7 +4,7 @@ import Container from "./Container";
 const NavItem = ({ children, to }) => {
   return (
     <NavLink
-      className="font-extralight text-gray-200 py-2 px-4 hover:bg-emerald-900 rounded-lg transition-colors ease-in"
+      className="font-extralight lg:text-md text-xl text-gray-200 py-2 px-4 hover:bg-emerald-900 rounded-lg transition-colors ease-in"
       to={to}
     >
       {children}
@@ -19,7 +19,7 @@ const Navbar = () => {
         <Link className="logo py-2" to="/">
           Adrian Berisha
         </Link>
-        <div className="lg:relative lg:bottom-auto fixed w-full left-0 lg:block lg:w-max flex justify-center bottom-20">
+        <div className="lg:relative lg:bottom-auto fixed w-full left-0 lg:block lg:w-max flex justify-center bottom-15">
           <nav className="flex flex-row rounded-lg border bg-secondary">
             <NavItem to="/">Home</NavItem>
             <NavItem to="/projects">Projects</NavItem>

@@ -6,7 +6,7 @@ import profile from "../../assets/profile.png";
 
 const HeroSection = () => {
   return (
-    <Section className="py-28">
+    <Section className="lg:py-28 pt-8 pb-16">
       <Container className="lg:flex-row items-center lg:items-stretch lg:gap-0 gap-4 justify-center lg:justify-between">
         <div className="lg:max-w-3/5 max-w-full lg:block flex flex-col items-center lg:order-1 order-2">
           <h1 className="lg:text-4xl text-3xl lg:text-left text-center font-extralight mb-6">
