@@ -83,10 +83,6 @@ body {
   z-index: 5;
 }
 
-.active {
-  color: var(--accent-color);
-}
-
 .emphasized {
   color: var(--accent-color);
 }

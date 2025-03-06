@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="pt-16 pb-40 bg-secondary">
       <Container>
-        <div className="relative flex lg:flex-row flex-col justify-between items-start">
+        <div className="relative flex lg:flex-row flex-col justify-between lg:items-start items-center lg:text-left text-center">
           <Link className="logo py-2 lg:mb-0 mb-6" to="/">
             Adrian Berisha
           </Link>

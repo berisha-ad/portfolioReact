@@ -1,29 +1,48 @@
+import { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import Container from "./Container";
+import "./navbar.css";
+import hacker from "../../assets/hacker.svg";
 
-const NavItem = ({ children, to }) => {
+const NavItem = ({ children, to, onClick }) => {
   return (
-    <NavLink
-      className="font-extralight lg:text-md text-xl text-gray-200 py-2 px-4 hover:bg-emerald-900 rounded-lg transition-colors ease-in"
-      to={to}
-    >
+    <NavLink onClick={onClick} className="navlink" to={to}>
       {children}
     </NavLink>
   );
 };
 
 const Navbar = () => {
+  const [menuState, setMenuState] = useState(false);
+
   return (
-    <header className="relative z-20 py-4">
-      <Container className="flex-row justify-between">
+    <header className="navbar">
+      <Container className="flex-row justify-between items-center">
         <Link className="logo py-2" to="/">
           Adrian Berisha
         </Link>
-        <div className="lg:static fixed w-full left-0 lg:block lg:w-max flex justify-center top-195">
-          <nav className="flex flex-row rounded-lg border bg-secondary">
-            <NavItem to="/">Home</NavItem>
-            <NavItem to="/projects">Projects</NavItem>
-            <NavItem to="/about">About</NavItem>
+        <div className="menu-wrapper">
+          <button onClick={() => setMenuState(!menuState)} className="menubtn">
+            {menuState ? "close" : "menu"}
+          </button>
+          <nav className={menuState ? `menu open` : `menu`}>
+            <NavItem onClick={() => setMenuState(false)} to="/">
+              Home
+            </NavItem>
+            <NavItem onClick={() => setMenuState(false)} to="/projects">
+              Projects
+            </NavItem>
+            <NavItem onClick={() => setMenuState(false)} to="/about">
+              About
+            </NavItem>
+            <div className="flex gap-4">
+              <div className="navlink small w-full">
+                <a href="mailto:adrianberisha0@gmail.com">Contact</a>
+              </div>
+              <div className="navlink small">
+                <img src={hacker} width="60px" alt="programmer icon" />
+              </div>
+            </div>
           </nav>
         </div>
       </Container>
