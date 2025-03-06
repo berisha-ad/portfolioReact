@@ -14,12 +14,12 @@ const NavItem = ({ children, to }) => {
 
 const Navbar = () => {
   return (
-    <header className="relative z-50 py-4">
+    <header className="relative z-20 py-4">
       <Container className="flex-row justify-between">
         <Link className="logo py-2" to="/">
           Adrian Berisha
         </Link>
-        <div className="lg:relative lg:bottom-auto fixed w-full left-0 lg:block lg:w-max flex justify-center bottom-15">
+        <div className="lg:relative lg:bottom-auto fixed w-full left-0 lg:block lg:w-max flex justify-center top-195">
           <nav className="flex flex-row rounded-lg border bg-secondary">
             <NavItem to="/">Home</NavItem>
             <NavItem to="/projects">Projects</NavItem>

@@ -23,7 +23,7 @@ const ProjectsSection = () => {
     setTimeout(() => {
       setSelectedProject(null);
       setIsClosing(false);
-    }, 600); // Timeout entspricht der Animation
+    }, 600);
   };
 
   return (
