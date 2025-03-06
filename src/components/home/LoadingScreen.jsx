@@ -3,6 +3,8 @@ import gsap from "gsap";
 
 const LoadingScreen = () => {
   useEffect(() => {
+    document.body.style.overflow = "hidden";
+
     const tl = gsap.timeline();
     const isMobile = window.innerWidth < 768;
     const duration = isMobile ? 0.7 : 1.3;
@@ -22,10 +24,14 @@ const LoadingScreen = () => {
         width: 0,
         duration: duration,
         ease: "power2.out",
+        onComplete: () => {
+          document.body.style.overflow = "auto";
+        },
       });
 
     return () => {
-      tl.kill(); // Stoppt die Animation, wenn die Komponente unmounted wird
+      tl.kill();
+      document.body.style.overflow = "auto";
     };
   }, []);
 
