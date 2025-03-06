@@ -19,7 +19,7 @@ const Navbar = () => {
         <Link className="logo py-2" to="/">
           Adrian Berisha
         </Link>
-        <div className="lg:relative lg:bottom-auto fixed w-full left-0 lg:block lg:w-max flex justify-center top-195">
+        <div className="lg:relative lg:bottom-auto fixed w-full left-0 lg:block lg:w-max flex justify-center lg:top-auto top-195">
           <nav className="flex flex-row rounded-lg border bg-secondary">
             <NavItem to="/">Home</NavItem>
             <NavItem to="/projects">Projects</NavItem>
