@@ -50,7 +50,7 @@
     background-color: var(--secondary-color);
     gap: 1rem;
     padding: 2rem;
-    padding-top: 10rem;
+    justify-content: center;
     transition: all 200ms ease;
   }
 

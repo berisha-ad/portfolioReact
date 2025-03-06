@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Section from "../shared/Section";
 import Container from "../shared/Container";
 import Grid from "../shared/Grid";
@@ -25,6 +25,18 @@ const ProjectsSection = () => {
       setIsClosing(false);
     }, 600);
   };
+
+  useEffect(() => {
+    if (selectedProject) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [selectedProject]);
 
   return (
     <Section className="py-16">

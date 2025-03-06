@@ -3,10 +3,12 @@ import Container from "../shared/Container";
 
 const HeroSection = () => {
   return (
-    <Section className="py-28">
+    <Section className="pt-14 pb-8">
       <Container>
-        <h1 className="text-4xl font-extralight mb-6">My projects</h1>
-        <p className="text-lg">This page contains links to my projects</p>
+        <h1 className="text-4xl font-extralight mb-6">
+          My <em className="emphasized">projects</em>
+        </h1>
+        <p className="text-lg">Tap on a project for further details.</p>
       </Container>
     </Section>
   );

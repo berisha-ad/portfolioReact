@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { NavLink, Link } from "react-router-dom";
 import Container from "./Container";
 import "./navbar.css";
@@ -14,6 +14,18 @@ const NavItem = ({ children, to, onClick }) => {
 
 const Navbar = () => {
   const [menuState, setMenuState] = useState(false);
+
+  useEffect(() => {
+    if (menuState) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [menuState]);
 
   return (
     <header className="navbar">
