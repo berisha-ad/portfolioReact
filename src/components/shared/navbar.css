@@ -33,6 +33,10 @@
   width: max-content;
 }
 
+.contact-icons {
+  display: none;
+}
+
 @media (max-width: 750px) {
   .menu {
     flex-direction: column;
@@ -68,7 +72,7 @@
   }
 
   .navlink {
-    padding: 3rem;
+    padding: 2.2rem;
     border: 0.01rem solid #ffffff40;
     border-radius: 1rem;
     font-size: 1.6rem;
@@ -82,8 +86,12 @@
     z-index: 100;
   }
 
+  .contact-icons {
+    display: flex;
+  }
+
   .navlink.small {
-    padding: 2rem;
+    padding: 1.4rem;
     font-size: 1.3rem;
     background-color: #1c2f29;
   }

@@ -35,7 +35,7 @@ const Navbar = () => {
             <NavItem onClick={() => setMenuState(false)} to="/about">
               About
             </NavItem>
-            <div className="flex gap-4">
+            <div className="flex gap-4 contact-icons">
               <div className="navlink small w-full">
                 <a href="mailto:adrianberisha0@gmail.com">Contact</a>
               </div>
