@@ -48,9 +48,13 @@ const Navbar = () => {
               About
             </NavItem>
             <div className="flex gap-4 contact-icons">
-              <div className="navlink small w-full">
-                <a href="mailto:adrianberisha0@gmail.com">Contact</a>
-              </div>
+              <a
+                className="navlink small w-full"
+                href="mailto:adrianberisha0@gmail.com"
+              >
+                Contact
+              </a>
+
               <div className="navlink small">
                 <img src={hacker} width="60px" alt="programmer icon" />
               </div>
