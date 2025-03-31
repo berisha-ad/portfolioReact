@@ -25,7 +25,7 @@ import sh2 from "./images/sh2.jpg";
 import coffeeshop from "./images/coffeeshop.jpg";
 import terrassencafe from "./images/terrassencafe.jpg";
 import hautzentrum from "./images/hautzentrum.jpg";
-import jobinterviews from "./images/jobinterviews.jpg";
+import jobinterviews from "./images/jobinterviewchat.jpg";
 
 const projects = [
   {
