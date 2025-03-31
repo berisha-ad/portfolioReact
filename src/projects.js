@@ -14,6 +14,7 @@ import figma from "./icons/figma.svg";
 import photoshop from "./icons/photoshop.svg";
 import illustrator from "./icons/illustrator.svg";
 import webflow from "./icons/webflow.svg";
+import express from "./icons/express.svg";
 
 import elega from "./images/elega.jpg";
 import quranapp from "./images/quranapp.png";
@@ -24,6 +25,7 @@ import sh2 from "./images/sh2.jpg";
 import coffeeshop from "./images/coffeeshop.jpg";
 import terrassencafe from "./images/terrassencafe.jpg";
 import hautzentrum from "./images/hautzentrum.jpg";
+import jobinterviews from "./images/jobinterviews.jpg";
 
 const projects = [
   {
@@ -38,6 +40,16 @@ const projects = [
   },
   {
     id: 2,
+    title: "Jobinterviews",
+    description:
+      "This job interview web app, built with React, Tailwind CSS, and Node.js with Express, provides an interactive platform for users to practice job interviews with an AI assistant. The backend integrates the OpenAI API, enabling dynamic, job-specific interview questions and real-time evaluation. Users start by entering a job title, after which the AI conducts a mock interview with 10 relevant questions. Each response is scored on a scale of 1 to 10, and at the end of the session, users receive a detailed assessment indicating whether they have passed or not. The seamless communication between the frontend and backend ensures a smooth user experience, while the modern interface makes interview preparation engaging and effective. This project highlights expertise in full-stack development, API integration, and AI-driven interactions, demonstrating strong skills in React, backend API communication, and real-time scoring.",
+    year: "2025",
+    link: "https://github.com/berisha-ad/jobinterviews",
+    image: jobinterviews,
+    skills: [react, tailwind, node, express, postman],
+  },
+  {
+    id: 3,
     title: "QuranApp",
     description:
       "This Quran React app is being developed using React and Tailwind CSS, combining modern front-end technologies with an elegant and responsive design. The app aims to provide users with easy access to the Quranic text, featuring a clean and intuitive interface that enhances the reading experience. It utilizes an open-source Quran API, which allows seamless integration of Quranic content, including verses, surahs, and translations. Although still in development, the app is designed with a focus on performance and user experience, ensuring that it loads quickly and provides smooth navigation. Tailwind CSS is used to create a highly customizable and flexible design, making it easy to adapt the app for various screen sizes and user preferences. As the app continues to develop, additional features like search functionality, bookmarking, and audio recitations are planned to enhance its usability and accessibility for users. This project highlights skills in React development, working with APIs, and building responsive web applications.",
@@ -47,18 +59,8 @@ const projects = [
     skills: [react, tailwind],
   },
   {
-    id: 3,
-    title: "Portfolio",
-    description:
-      "This portfolio website was built as the first Django project, demonstrating a strong foundation in both backend and frontend development. The project leverages Django’s powerful framework to manage dynamic content, handle database interactions, and ensure a smooth user experience. The website includes key features such as user authentication, contact forms, and project showcases, effectively integrating backend logic with a responsive frontend design. Additionally, it follows best practices for code organization, security, and performance optimization. This project serves as a testament to the ability to build full-stack applications using Django and highlights the journey of mastering web development.",
-    year: "2024",
-    link: "https://github.com/berisha-ad/portfolio_py",
-    image: portfolio,
-    skills: [python, django, html, css, javascript],
-  },
-  {
     id: 4,
-    title: "React Portfolio",
+    title: "Portfolio",
     description:
       "This portfolio website was built using React and Vite, reflecting a refined approach to modern frontend development. After gaining confidence in React, the project was developed to take full advantage of its component-based architecture, ensuring a modular, scalable, and maintainable code structure. The website features a dynamic project showcase, interactive UI elements, and smooth navigation, all optimized for performance and user experience. To enhance styling efficiency and maintainability, Tailwind CSS was integrated, allowing for a clean and responsive design without excessive custom CSS. The utility-first approach of Tailwind ensures a streamlined development process while maintaining flexibility in styling. Best practices in state management, reusable components, and performance optimization were followed, demonstrating a strong understanding of React’s ecosystem. This portfolio not only highlights the ability to build modern, high-performance web applications but also serves as a testament to the journey of mastering React, Vite, and Tailwind CSS in real-world projects.",
     year: "2025",
@@ -68,16 +70,6 @@ const projects = [
   },
   {
     id: 5,
-    title: "Zukunftsraum",
-    description:
-      "I’m currently working on a real estate listing app built with Python using the Django framework. This project focuses on providing users with an efficient platform to browse, manage, and interact with property listings. Key features include user authentication, allowing users to register, log in, and manage their profiles securely. The app supports full CRUD (Create, Read, Update, Delete) functionality, enabling users to create new property listings, view existing ones, edit details, and remove listings when necessary. The back-end is powered by a PostgreSQL database, which ensures reliable data storage and retrieval for property listings, user accounts, and other app-related information. The app is designed with scalability and performance in mind, following best practices for security, user experience, and responsive design. As the project continues to develop, additional features such as advanced search filters, property image uploads, and user messaging are being integrated. This project showcases skills in Django web development, working with PostgreSQL databases, and building data-driven applications.",
-    year: "2025",
-    link: "",
-    image: zukunftsraum,
-    skills: [python, django, html, css, javascript],
-  },
-  {
-    id: 6,
     title: "SH2 Gmbh",
     description:
       "I developed a custom WordPress CMS theme for the website of SH2 GmbH, creating a unique and personalized online presence for the company. The theme was designed to align with SH2 GmbH’s branding and business needs, ensuring a visually appealing, user-friendly experience. I focused on optimizing both the frontend design and backend functionality, making sure that the theme was not only aesthetically pleasing but also fully responsive and easy to navigate on all devices. Custom features were integrated to allow for easy content management by the SH2 GmbH team, enabling them to update and maintain the website effortlessly. The custom theme was built with performance, security, and SEO best practices in mind, ensuring that the website loads quickly and ranks well in search engines. This project highlights my ability to design and develop tailored WordPress solutions, providing businesses with fully functional, scalable websites that meet their specific needs.",
@@ -87,7 +79,7 @@ const projects = [
     skills: [php, html, css, javascript],
   },
   {
-    id: 7,
+    id: 6,
     title: "Coffeeshop",
     description:
       "A static website was developed as the first major project during my academic studies, serving as a foundational milestone in learning web development. The website was built using essential front-end technologies, including HTML, CSS, and JavaScript, providing a hands-on experience in creating visually engaging, responsive, and functional web pages. The project aimed to showcase a strong understanding of web design principles, layout techniques, and content structure. It also emphasized the importance of clean, well-organized code and basic interactivity, ensuring that users could navigate through the site effortlessly. This static website served as a personal portfolio, allowing me to demonstrate my ability to integrate text, images, and other media to create an effective and aesthetically pleasing user experience. It marked the beginning of my journey in web development, providing a solid foundation for more complex, dynamic projects in the future.",
