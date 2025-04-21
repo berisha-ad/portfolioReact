@@ -55,7 +55,7 @@ const CvSection = () => {
           </Card>
           <Card className="flex flex-col gap-4 lg:col-span-2 lg:p-8 p-6">
             <h3 className="headline-caps lg:text-xl text-md">
-              Software Developer
+              Fullstack-Developer
             </h3>
             <h4 className="text-xl">Adana Gmbh</h4>
             <p>

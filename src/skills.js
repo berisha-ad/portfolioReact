@@ -14,6 +14,12 @@ import figma from "./icons/figma.svg";
 import photoshop from "./icons/photoshop.svg";
 import illustrator from "./icons/illustrator.svg";
 import webflow from "./icons/webflow.svg";
+import nextWhite from "./icons/next-white.svg";
+import next from "./icons/nextjs.svg";
+import nextAccent from "./icons/next-accent.svg";
+import typescript from "./icons/typescript.svg";
+import laravel from "./icons/laravel.svg";
+import express from "./icons/express-accent.svg";
 
 const skills = [
   {
@@ -33,66 +39,86 @@ const skills = [
   },
   {
     id: 4,
-    skill: "NodeJS",
-    icon: node,
+    skill: "Laravel",
+    icon: laravel,
   },
   {
     id: 5,
-    skill: "React",
-    icon: react,
-  },
-  {
-    id: 6,
-    skill: "HTML",
-    icon: html,
-  },
-  {
-    id: 7,
-    skill: "CSS",
-    icon: css,
-  },
-  {
-    id: 8,
     skill: "Javascript",
     icon: javascript,
   },
   {
+    id: 6,
+    skill: "Typescript",
+    icon: typescript,
+  },
+  {
+    id: 7,
+    skill: "Node.js",
+    icon: node,
+  },
+  {
+    id: 7,
+    skill: "Express.js",
+    icon: express,
+  },
+  {
+    id: 8,
+    skill: "React.js",
+    icon: react,
+  },
+  {
     id: 9,
+    skill: "Next.js",
+    icon: nextAccent,
+  },
+  {
+    id: 10,
+    skill: "HTML",
+    icon: html,
+  },
+  {
+    id: 11,
+    skill: "CSS",
+    icon: css,
+  },
+  {
+    id: 12,
     skill: "Tailwind",
     icon: tailwind,
   },
   {
-    id: 10,
+    id: 13,
     skill: "Postman",
     icon: postman,
   },
   {
-    id: 11,
+    id: 14,
     skill: "Docker",
     icon: docker,
   },
   {
-    id: 12,
+    id: 15,
     skill: "Git",
     icon: git,
   },
   {
-    id: 13,
+    id: 16,
     skill: "Figma",
     icon: figma,
   },
   {
-    id: 14,
+    id: 17,
     skill: "Photoshop",
     icon: photoshop,
   },
   {
-    id: 15,
+    id: 18,
     skill: "Illustrator",
     icon: illustrator,
   },
   {
-    id: 16,
+    id: 19,
     skill: "Webflow",
     icon: webflow,
   },

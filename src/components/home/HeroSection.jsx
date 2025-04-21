@@ -16,7 +16,7 @@ const HeroSection = () => {
           <p className="text-lg mb-6 lg:text-left xs:bg-red-500 text-center">
             As a full-stack developer, I create modern web applications using
             <br />
-            technologies such as Python and PHP
+            technologies such as NodeJS and React
           </p>
           <div className="flex lg:gap-4 gap-4 justify-center lg:justify-start">
             <a
