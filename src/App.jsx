@@ -7,8 +7,6 @@ import Imprint from "./pages/Imprint";
 import Layout from "./pages/Layout";
 import NotFound from "./pages/NotFound";
 
-// Test Änderung
-
 const routes = createBrowserRouter([
   {
     element: <Layout />,
