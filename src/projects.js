@@ -71,7 +71,7 @@ const projects = [
     description:
       "Planbase is a construction management web application currently in development, built with Laravel for the backend and React (TypeScript) for the frontend. It is tailored for site managers and small construction companies, aiming to simplify project coordination, employee management, and digital time tracking through a clean and responsive user interface. The platform is designed to let users create and manage projects, assign workers, and share updates via posts containing descriptions and images. Employee information can be added and managed centrally, with invitations sent by email to onboard new users. A key feature in development is the GPS-based time tracking system, which automatically pauses tracking when a worker moves more than 500 meters from the designated site. Time data is visualized in a calendar, with admins having full access and employees limited to their own records. The app is also being built with a focus on mobile usability, data security, and performance. Once completed, users will be able to register through an email confirmation, explore the platform with a free trial, or subscribe via Stripe. This project demonstrates practical skills in full-stack web development and real-world application design.",
     year: "2025",
-    link: "/",
+    link: "https://github.com/berisha-ad/planbase",
     image: planbase,
     skills: [react, typescript, laravel, tailwind, docker],
   },
