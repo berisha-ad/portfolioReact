@@ -15,11 +15,13 @@ import photoshop from "./icons/photoshop.svg";
 import illustrator from "./icons/illustrator.svg";
 import webflow from "./icons/webflow.svg";
 import express from "./icons/express.svg";
+import expressWhite from "./icons/express-white.svg";
 import next from "./icons/next-white.svg";
 import nextAccent from "./icons/next-accent.svg";
 import expressAccent from "./icons/express-accent.svg";
 import laravel from "./icons/laravel.svg";
 import typescript from "./icons/typescript.svg";
+import wordpress from "./icons/wordpress.svg";
 
 import elega from "./images/elega.jpg";
 import quranapp from "./images/quranapp.png";
@@ -33,6 +35,7 @@ import hautzentrum from "./images/hautzentrum.jpg";
 import jobinterviews from "./images/jobinterviewchat.jpg";
 import webstruct from "./images/webstruct.jpg";
 import planbase from "./images/planbase.jpg";
+import simbasports from "./images/simbascreen.jpg";
 
 const projects = [
   {
@@ -63,7 +66,7 @@ const projects = [
     year: "2025",
     link: "https://github.com/berisha-ad/jobinterviews",
     image: jobinterviews,
-    skills: [react, tailwind, node, expressAccent, postman],
+    skills: [react, tailwind, node, expressWhite, postman],
   },
   {
     id: 4,
@@ -75,18 +78,28 @@ const projects = [
     image: planbase,
     skills: [react, typescript, laravel, tailwind, docker],
   },
-  {
-    id: 5,
-    title: "Portfolio",
-    description:
-      "This portfolio website was built using React and Vite, reflecting a refined approach to modern frontend development. After gaining confidence in React, the project was developed to take full advantage of its component-based architecture, ensuring a modular, scalable, and maintainable code structure. The website features a dynamic project showcase, interactive UI elements, and smooth navigation, all optimized for performance and user experience. To enhance styling efficiency and maintainability, Tailwind CSS was integrated, allowing for a clean and responsive design without excessive custom CSS. The utility-first approach of Tailwind ensures a streamlined development process while maintaining flexibility in styling. Best practices in state management, reusable components, and performance optimization were followed, demonstrating a strong understanding of React’s ecosystem. This portfolio not only highlights the ability to build modern, high-performance web applications but also serves as a testament to the journey of mastering React, Vite, and Tailwind CSS in real-world projects.",
-    year: "2025",
-    link: "https://github.com/berisha-ad/portfolioReact",
-    image: portfolioReact,
-    skills: [react, tailwind],
-  },
+  // {
+  //   id: 5,
+  //   title: "Portfolio",
+  //   description:
+  //     "This portfolio website was built using React and Vite, reflecting a refined approach to modern frontend development. After gaining confidence in React, the project was developed to take full advantage of its component-based architecture, ensuring a modular, scalable, and maintainable code structure. The website features a dynamic project showcase, interactive UI elements, and smooth navigation, all optimized for performance and user experience. To enhance styling efficiency and maintainability, Tailwind CSS was integrated, allowing for a clean and responsive design without excessive custom CSS. The utility-first approach of Tailwind ensures a streamlined development process while maintaining flexibility in styling. Best practices in state management, reusable components, and performance optimization were followed, demonstrating a strong understanding of React’s ecosystem. This portfolio not only highlights the ability to build modern, high-performance web applications but also serves as a testament to the journey of mastering React, Vite, and Tailwind CSS in real-world projects.",
+  //   year: "2025",
+  //   link: "https://github.com/berisha-ad/portfolioReact",
+  //   image: portfolioReact,
+  //   skills: [react, tailwind],
+  // },
   {
     id: 6,
+    title: "Simba Sports Gym",
+    description:
+      "I developed a modern, high-performance website for Simba Sports Gym, a boxing gym located in Vienna’s 21st district, using Next.js and Tailwind CSS in combination with WordPress as a headless CMS. The site was designed to reflect the energetic and bold branding of the gym, with a clean, responsive user interface that performs seamlessly across all devices. A key feature of the project is a dynamic trial training registration system, where users can sign up by providing their name, email, and preferred date. The system securely checks the WordPress database to ensure that the user hasn’t already registered for a trial session. If they have, they are informed accordingly; if not, they receive a personalized PDF ticket via email. This ticket includes their name, selected date, and a unique, randomly generated verification code to prevent misuse or duplication. This code can be cross-checked at the gym’s front desk. The email is sent from a dedicated no-reply address, and the ticket design aligns with the gym’s branding for a professional and engaging experience. This project demonstrates my ability to integrate frontend technologies with custom backend logic, build secure and user-centric features, and deliver scalable digital solutions tailored to a client’s operational needs.",
+    year: "2025",
+    link: "https://www.simbasports-boxing.at/",
+    image: simbasports,
+    skills: [next, tailwind, wordpress],
+  },
+  {
+    id: 7,
     title: "SH2 Gmbh",
     description:
       "I developed a custom WordPress CMS theme for the website of SH2 GmbH, creating a unique and personalized online presence for the company. The theme was designed to align with SH2 GmbH’s branding and business needs, ensuring a visually appealing, user-friendly experience. I focused on optimizing both the frontend design and backend functionality, making sure that the theme was not only aesthetically pleasing but also fully responsive and easy to navigate on all devices. Custom features were integrated to allow for easy content management by the SH2 GmbH team, enabling them to update and maintain the website effortlessly. The custom theme was built with performance, security, and SEO best practices in mind, ensuring that the website loads quickly and ranks well in search engines. This project highlights my ability to design and develop tailored WordPress solutions, providing businesses with fully functional, scalable websites that meet their specific needs.",

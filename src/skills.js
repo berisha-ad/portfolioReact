@@ -14,6 +14,7 @@ import figma from "./icons/figma.svg";
 import photoshop from "./icons/photoshop.svg";
 import illustrator from "./icons/illustrator.svg";
 import webflow from "./icons/webflow.svg";
+import expressWhite from "./icons/express-white.svg";
 import nextWhite from "./icons/next-white.svg";
 import next from "./icons/nextjs.svg";
 import nextAccent from "./icons/next-accent.svg";
@@ -27,11 +28,11 @@ const skills = [
     skill: "Python",
     icon: python,
   },
-  {
-    id: 2,
-    skill: "Django",
-    icon: django,
-  },
+  // {
+  //   id: 2,
+  //   skill: "Django",
+  //   icon: django,
+  // },
   {
     id: 3,
     skill: "PHP",
@@ -60,7 +61,7 @@ const skills = [
   {
     id: 8,
     skill: "Express.js",
-    icon: express,
+    icon: expressWhite,
   },
   {
     id: 9,
@@ -70,27 +71,22 @@ const skills = [
   {
     id: 10,
     skill: "Next.js",
-    icon: nextAccent,
+    icon: nextWhite,
   },
-  {
-    id: 11,
-    skill: "HTML",
-    icon: html,
-  },
-  {
-    id: 12,
-    skill: "CSS",
-    icon: css,
-  },
+  // {
+  //   id: 11,
+  //   skill: "HTML",
+  //   icon: html,
+  // },
+  // {
+  //   id: 12,
+  //   skill: "CSS",
+  //   icon: css,
+  // },
   {
     id: 13,
     skill: "Tailwind",
     icon: tailwind,
-  },
-  {
-    id: 14,
-    skill: "Postman",
-    icon: postman,
   },
   {
     id: 15,
@@ -116,11 +112,6 @@ const skills = [
     id: 19,
     skill: "Illustrator",
     icon: illustrator,
-  },
-  {
-    id: 20,
-    skill: "Webflow",
-    icon: webflow,
   },
 ];
 
