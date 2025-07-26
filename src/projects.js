@@ -35,11 +35,13 @@ import hautzentrum from "./images/hautzentrum.jpg";
 import jobinterviews from "./images/jobinterviewchat.jpg";
 import webstruct from "./images/webstruct.jpg";
 import planbase from "./images/planbase.jpg";
+import netdev from "./images/netdev.jpg";
 import simbasports from "./images/simbascreen.jpg";
 
 const projects = [
   {
     id: 1,
+    online: false,
     title: "Elega",
     description:
       "This car listing web app was developed using vanilla PHP, offering a robust platform for users to manage car listings seamlessly. The application features a user registration and login system, allowing users to securely create accounts, sign in, and access personalized dashboards. With full CRUD (Create, Read, Update, Delete) functionality, users can easily add new car listings, view existing listings, edit them, or remove them from the platform as needed. The app integrates with a MySQL database to store user and car listing data, ensuring smooth data retrieval and manipulation. The design focuses on simplicity and functionality, offering an intuitive user interface that makes managing car listings efficient. This project demonstrates proficiency in PHP for building dynamic, data-driven applications and showcases skills in user authentication, database management, and full-stack web development.",
@@ -50,16 +52,18 @@ const projects = [
   },
   {
     id: 2,
+    online: true,
     title: "Webstruct",
     description:
       "Webstruct is a personal portfolio and business website developed using Next.js, showcasing a comprehensive range of services including branding, UX/UI design, web design, and full-stack development. The site features a sleek, custom-built interface that reflects a strong design sensibility and technical expertise. It includes a website speed testing tool powered by the Google PageSpeed API, allowing users to analyze and optimize their web performance. Additionally, a fully functional contact form enables potential clients to reach out directly, streamlining communication. Every aspect of the site—from logo design and visual identity to front-end and back-end implementation—was crafted in-house, highlighting proficiency in modern web technologies, performance optimization, and user-centered design. This project serves as a dynamic showcase of both creative and technical skills within a professional context.",
     year: "2025",
     link: "https://www.webstruct.at/",
     image: webstruct,
-    skills: [next, tailwind],
+    skills: [next, javascript, tailwind],
   },
   {
     id: 3,
+    online: false,
     title: "Jobinterviews",
     description:
       "This job interview web app, built with React, Tailwind CSS, and Node.js with Express, provides an interactive platform for users to practice job interviews with an AI assistant. The backend integrates the OpenAI API, enabling dynamic, job-specific interview questions and real-time evaluation. Users start by entering a job title, after which the AI conducts a mock interview with 10 relevant questions. Each response is scored on a scale of 1 to 10, and at the end of the session, users receive a detailed assessment indicating whether they have passed or not. The seamless communication between the frontend and backend ensures a smooth user experience, while the modern interface makes interview preparation engaging and effective. This project highlights expertise in full-stack development, API integration, and AI-driven interactions, demonstrating strong skills in React, backend API communication, and real-time scoring.",
@@ -70,12 +74,13 @@ const projects = [
   },
   {
     id: 4,
-    title: "Planbase",
+    online: false,
+    title: "Netdev",
     description:
-      "Planbase is a construction management web application currently in development, built with Laravel for the backend and React (TypeScript) for the frontend. It is tailored for site managers and small construction companies, aiming to simplify project coordination, employee management, and digital time tracking through a clean and responsive user interface. The platform is designed to let users create and manage projects, assign workers, and share updates via posts containing descriptions and images. Employee information can be added and managed centrally, with invitations sent by email to onboard new users. A key feature in development is the GPS-based time tracking system, which automatically pauses tracking when a worker moves more than 500 meters from the designated site. Time data is visualized in a calendar, with admins having full access and employees limited to their own records. The app is also being built with a focus on mobile usability, data security, and performance. Once completed, users will be able to register through an email confirmation, explore the platform with a free trial, or subscribe via Stripe. This project demonstrates practical skills in full-stack web development and real-world application design.",
+      "netdev is a platform for software developers, built with React, TypeScript, and Tailwind CSS on the frontend and Laravel on the backend, designed to let users create a personal account, build a small portfolio, upload their CV, showcase projects, add skills, and define their location within a clean and responsive interface. A key aspect of the platform is its many-to-many data structure, allowing users to associate themselves with existing skills and locations or create new ones that other users can also utilize. This setup enables precise filtering and searching based on skills, locations, or their combinations. Registration and onboarding are handled through email confirmation, while performance, data security, and efficient database queries remain central to the development. Future plans include advanced filtering and sorting, bookmarks, skill-based recommendations, and CV exports, making netdev a practical demonstration of full-stack web development expertise and a platform tailored to the real needs of developers.",
     year: "2025",
-    link: "https://github.com/berisha-ad/planbase",
-    image: planbase,
+    link: "/",
+    image: netdev,
     skills: [react, typescript, laravel, tailwind, docker],
   },
   // {
@@ -90,16 +95,18 @@ const projects = [
   // },
   {
     id: 6,
+    online: true,
     title: "Simba Sports Gym",
     description:
       "I developed a modern, high-performance website for Simba Sports Gym, a boxing gym located in Vienna’s 21st district, using Next.js and Tailwind CSS in combination with WordPress as a headless CMS. The site was designed to reflect the energetic and bold branding of the gym, with a clean, responsive user interface that performs seamlessly across all devices. A key feature of the project is a dynamic trial training registration system, where users can sign up by providing their name, email, and preferred date. The system securely checks the WordPress database to ensure that the user hasn’t already registered for a trial session. If they have, they are informed accordingly; if not, they receive a personalized PDF ticket via email. This ticket includes their name, selected date, and a unique, randomly generated verification code to prevent misuse or duplication. This code can be cross-checked at the gym’s front desk. The email is sent from a dedicated no-reply address, and the ticket design aligns with the gym’s branding for a professional and engaging experience. This project demonstrates my ability to integrate frontend technologies with custom backend logic, build secure and user-centric features, and deliver scalable digital solutions tailored to a client’s operational needs.",
     year: "2025",
     link: "https://www.simbasports-boxing.at/",
     image: simbasports,
-    skills: [next, tailwind, wordpress],
+    skills: [next, javascript, tailwind, wordpress],
   },
   {
     id: 7,
+    online: true,
     title: "SH2 Gmbh",
     description:
       "I developed a custom WordPress CMS theme for the website of SH2 GmbH, creating a unique and personalized online presence for the company. The theme was designed to align with SH2 GmbH’s branding and business needs, ensuring a visually appealing, user-friendly experience. I focused on optimizing both the frontend design and backend functionality, making sure that the theme was not only aesthetically pleasing but also fully responsive and easy to navigate on all devices. Custom features were integrated to allow for easy content management by the SH2 GmbH team, enabling them to update and maintain the website effortlessly. The custom theme was built with performance, security, and SEO best practices in mind, ensuring that the website loads quickly and ranks well in search engines. This project highlights my ability to design and develop tailored WordPress solutions, providing businesses with fully functional, scalable websites that meet their specific needs.",

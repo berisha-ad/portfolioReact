@@ -59,10 +59,18 @@ const ProjectsSection = () => {
               <h2 className="headline-caps text-xl">{project.title}</h2>
               <p>{shortenText(project.description)}</p>
               <Date>{project.year}</Date>
-              <div className="flex gap-4 p-2 rounded-sm mt-auto skills-wrapper w-max border">
-                {project.skills.map((skill, index) => (
-                  <img key={index} src={skill} width="19px" alt="" />
-                ))}
+              <div className="flex justify-between items-center mt-auto">
+                <div className="flex gap-4 p-2 rounded-sm skills-wrapper w-max border">
+                  {project.skills.map((skill, index) => (
+                    <img key={index} src={skill} width="19px" alt="" />
+                  ))}
+                </div>
+                {project.online && (
+                  <div className="flex items-center gap-2">
+                    <span className="text-green-300 text-sm">Online</span>
+                    <span className="rounded-full w-2 h-2 bg-green-300 inline-block"></span>
+                  </div>
+                )}
               </div>
             </Card>
           ))}
