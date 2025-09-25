@@ -11,12 +11,12 @@ const LoadingScreen = () => {
 
     tl.fromTo(
       ".loading-logo",
-      { opacity: 0 },
+      { opacity: 1 },
       { opacity: 1, delay: 0.5, duration: 0.5, ease: "power2.out" }
     )
       .to(".loading-logo", {
         opacity: 0,
-        delay: 0.6,
+        delay: 1.5,
         duration: 0.3,
         ease: "power2.out",
       })
@@ -37,7 +37,10 @@ const LoadingScreen = () => {
 
   return (
     <div className="loading-screen">
-      <div className="loading-logo">Adrian Berisha</div>
+      <span className="loading-logo">portfolio $</span>
+      <div>
+        <p className="loading-logo color-accent typewriter">npm run prod</p>
+      </div>
     </div>
   );
 };
