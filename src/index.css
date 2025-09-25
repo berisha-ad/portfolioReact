@@ -47,6 +47,7 @@ html {
   display: flex;
   gap: 1.5rem;
   justify-content: center;
+  align-items: center;
   background: linear-gradient(to right bottom, #14211d, #0f1815);
   z-index: 1000;
   pointer-events: none;
@@ -213,6 +214,7 @@ body {
     justify-content: center;
     padding-top: 20rem;
     gap: 1rem;
+    align-items: flex-start;
   }
 
   .loading-logo {
