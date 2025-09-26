@@ -69,11 +69,14 @@ html {
   margin-inline: auto;
   white-space: nowrap;
   border-right: 12px solid var(--accent-color);
-  animation: typing 1s steps(12) forwards, blink 0.5s step-end infinite;
+  animation: typing 1.5s steps(12) forwards, blink 0.5s step-end infinite;
 }
 
 @keyframes typing {
   from {
+    width: 0%;
+  }
+  50% {
     width: 0%;
   }
   to {
